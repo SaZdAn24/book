@@ -1,0 +1,255 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background: #141e30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #243b55, #141e30);
+  background: linear-gradient(to left, #243b55, #141e30);
+}
+
+* {
+  color: inherit;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-auto-flow: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.title-wrapper {
+  width: 100vw;
+  height: 8em;
+  font-family: "Alfa Slab One", cursive;
+  background: #e0eafc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #cfdef3,
+    #e0eafc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #cfdef3,
+    #e0eafc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-size: 1.4rem;
+  padding: 3em;
+  letter-spacing: 0.4rem;
+}
+
+.button-container {
+  margin: 2em auto;
+  width: min-content;
+  height: min-content;
+}
+
+.button-container button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Alfa Slab One", cursive;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  width: 10rem;
+  height: 4rem;
+  font-weight: 700;
+  color: white;
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.button-container button:hover {
+  color: black;
+  background-color: #e0eafc; /* fallback for old browsers */
+  background-color: -webkit-linear-gradient(
+    to left,
+    #cfdef3,
+    #e0eafc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background-color: linear-gradient(
+    to left,
+    #cfdef3,
+    #e0eafc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#book-form {
+  padding: 1em 3em;
+  border-radius: 10px;
+  background-color: #e0eafc; /* fallback for old browsers */
+  background-color: -webkit-linear-gradient(
+    to left,
+    #cfdef3,
+    #e0eafc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background-color: linear-gradient(
+    to left,
+    #cfdef3,
+    #e0eafc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#add-book-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#book-form h2 {
+  font-family: "Alfa Slab One", cursive;
+  margin: 1em;
+  text-align: center;
+}
+
+label {
+  width: max-content;
+  text-align: center;
+  font-family: "Gentium Book Plus", serif;
+  font-size: 1rem;
+  margin-bottom: 0.4em;
+  align-items: flex-end;
+}
+
+.text-input {
+  width: 16rem;
+  height: 3rem;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+#add-book-form button {
+  width: 16rem;
+  height: 3rem;
+  background-color: lightgreen;
+  border: none;
+  border-radius: 5px;
+  font-family: "Alfa Slab One", cursive;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+}
+
+::placeholder {
+  font-family: "Gentium Book Plus", serif;
+  font-size: 1rem;
+}
+
+.read-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  gap: 1em;
+  margin-bottom: 0.5em;
+}
+
+.read-container label {
+  font-size: 1.4rem;
+}
+
+.read-container input {
+  width: 2em;
+  height: 2em;
+}
+
+.book-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: fit-content;
+  height: 20rem;
+  font-family: "Gentium Book Plus", serif;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1.4em 3em;
+  border-radius: 10px;
+  background-color: #e0eafc; /* fallback for old browsers */
+  background-color: -webkit-linear-gradient(
+    to left,
+    #cfdef3,
+    #e0eafc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background-color: linear-gradient(
+    to left,
+    #cfdef3,
+    #e0eafc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.book-card h3 {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+}
+
+.book-card button {
+  font-family: "Gentium Book Plus", serif;
+  font-size: 1.2rem;
+  width: 14rem;
+  height: 3rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.book-card button:hover {
+  filter: brightness(0.95);
+}
+
+.read-button {
+  background-color: lightgreen;
+}
+
+.not-read-button {
+  background-color: lightcoral;
+}
+
+.book-card button:last-child {
+  background-color: lightgrey;
+}
+
+#book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  column-gap: 2em;
+  margin: 2em;
+  padding: 0 2em;
+}
+
+#book-form {
+  position: relative;
+  margin: 0 auto;
+  top: 30%;
+}
+.git {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 370px;
+  left: 30%;
+  border-radius: 50%;
+}
+.Git_text {
+  position: relative;
+  top: 405px;
+  left: 25%;
+  font-family: "Gentium Book Plus", serif;
+  color: #e0eafc;
+  text-decoration: none;
+  font-size: 22px;
+}

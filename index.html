@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="imeges/icon.png" />
+    <title>Library</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="title-wrapper">
+        <h1>Library</h1>
+      </div>
+
+      <div class="button-container">
+        <button id="new-book-btn">+ Book</button>
+      </div>
+
+      <div class="books-container">
+        <div id="book-list"></div>
+
+        <dialog id="book-form">
+          <h2>Add A New Book</h2>
+          <form id="add-book-form">
+            <input
+              name="title"
+              type="text"
+              id="title"
+              class="text-input"
+              placeholder="Title"
+              required
+            /><br />
+
+            <input
+              name="author"
+              type="text"
+              id="author"
+              class="text-input"
+              placeholder="Author"
+              required
+            /><br />
+
+            <input
+              name="pages"
+              type="number"
+              id="pages"
+              class="text-input"
+              placeholder="Number of Pages"
+              required
+            /><br />
+
+            <div class="read-container">
+              <label for="read">Have you read it?</label>
+              <input type="checkbox" id="read" name="read" /><br />
+            </div>
+
+            <button type="submit">Submit</button>
+          </form>
+        </dialog>
+      </div>
+      <a href="https://github.com/SaZdAn24">
+        <p class="Git_text">Github</p>
+        <img class="git" src="imeges/Github.png" alt="" srcset="" />
+      </a>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
